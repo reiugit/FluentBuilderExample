@@ -3,7 +3,7 @@ using FluentBuilderLibrary.Public;
 
 namespace FluentBuilderLibrary.Internal.Builders;
 
-internal class ProductBuilderStep3(string name, string description) : IProductBuilderForOptionalProperties
+internal class ProductBuilderForAllOptionalProperties(string name, string description) : IProductBuilderForAllOptionalProperties
 {
     private readonly string _name = name;
     private readonly string _description = description;
@@ -12,25 +12,25 @@ internal class ProductBuilderStep3(string name, string description) : IProductBu
     private string _property1 = "";
     private string _property2 = "";
 
-    public IProductBuilderForOptionalProperties WithCategory(Action<ICategoryBuilder> config)
+    public IProductBuilderForAllOptionalProperties WithCategory(Action<ICategoryBuilder> config)
     {
         config(_categoryBuilder);
         return this;
     }
 
-    public IProductBuilderForOptionalProperties WithTag(string tag)
+    public IProductBuilderForAllOptionalProperties WithTag(string tag)
     {
         _tags.Add(tag);
         return this;
     }
 
-    public IProductBuilderForOptionalProperties WithProperty1(string property1)
+    public IProductBuilderForAllOptionalProperties WithProperty1(string property1)
     {
         _property1 = property1;
         return this;
     }
 
-    public IProductBuilderForOptionalProperties WithProperty2(string property2)
+    public IProductBuilderForAllOptionalProperties WithProperty2(string property2)
     {
         _property2 = property2;
         return this;

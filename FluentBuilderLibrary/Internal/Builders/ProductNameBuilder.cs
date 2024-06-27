@@ -2,10 +2,10 @@
 
 namespace FluentBuilderLibrary.Internal.Builders;
 
-internal class ProductBuilderStep1 : IProductNameBuilder
+internal class ProductNameBuilder : IProductNameBuilder
 {
     public IProductDescriptionBuilder WithName(string name)
     {
-        return new ProductBuilderStep2(name);
+        return new ProductDescriptionBuilder(name);
     }
 }

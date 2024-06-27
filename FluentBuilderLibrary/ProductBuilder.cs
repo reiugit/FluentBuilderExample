@@ -7,5 +7,5 @@ public class ProductBuilder
 {
     private ProductBuilder() { }
 
-    public static IProductNameBuilder Empty() => new ProductBuilderStep1();
+    public static IProductNameBuilder Empty() => new ProductNameBuilder();
 }

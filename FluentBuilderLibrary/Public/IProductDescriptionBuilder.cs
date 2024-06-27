@@ -2,5 +2,5 @@
 
 public interface IProductDescriptionBuilder
 {
-    IProductBuilderForOptionalProperties WithDescription(string description);
+    IProductBuilderForAllOptionalProperties WithDescription(string description);
 }
