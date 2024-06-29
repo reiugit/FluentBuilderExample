@@ -30,6 +30,6 @@ var product = ProductBuilder
 Console.WriteLine($"\nThe product '{product.Name}' was successfully created via the 'Guided Fluent Builder'.");
 Console.WriteLine($"\nThe type of the product is '{product.GetType()}'");
 
-Console.WriteLine();
 
-
+Console.WriteLine("\n\nPress any key to exit.");
+Console.ReadKey(true);
