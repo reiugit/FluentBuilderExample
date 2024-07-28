@@ -15,5 +15,5 @@
  * The resulting product is immutable.
 <br>
 
- * The builder handles a nested subclass with lambda syntax.
  * The builder has a fluent syntax.
+ * The builder handles a nested subclass with lambda syntax.
